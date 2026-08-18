@@ -1,0 +1,10 @@
+{
+  "name": "jq",
+  "version": "1.7",
+  "description": "Command-line JSON processor",
+  "author": "Stephen Dolan",
+  "category": "utilities",
+  "size": "480 KB",
+  "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/jq.wasm",
+  "entrypoint": "_start"
+}

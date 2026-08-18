@@ -1,0 +1,10 @@
+{
+  "name": "quickjs",
+  "version": "2024-01-13",
+  "description": "Small and embeddable Javascript engine (ES2020) for WASI",
+  "author": "Fabrice Bellard",
+  "category": "programming",
+  "size": "720 KB",
+  "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/quickjs.wasm",
+  "entrypoint": "_start"
+}

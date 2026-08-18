@@ -1,0 +1,10 @@
+{
+  "name": "lua",
+  "version": "5.4.6",
+  "description": "Powerful, efficient, lightweight, embeddable scripting language",
+  "author": "Lua.org",
+  "category": "programming",
+  "size": "310 KB",
+  "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/lua.wasm",
+  "entrypoint": "_start"
+}

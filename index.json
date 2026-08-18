@@ -1,0 +1,86 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-08-18T15:53:50.084Z",
+  "packages": {
+    "cowsay": {
+      "name": "cowsay",
+      "version": "1.0.0",
+      "description": "Configurable talking cow in ASCII art (WASI binary)",
+      "author": "Tony Monroe",
+      "category": "games",
+      "size": "42 KB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/cowsay.wasm",
+      "entrypoint": "_start"
+    },
+    "figlet": {
+      "name": "figlet",
+      "version": "2.2.5",
+      "description": "Program for making large letters out of ordinary text",
+      "author": "Glenn Chappell",
+      "category": "utilities",
+      "size": "120 KB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/figlet.wasm",
+      "entrypoint": "_start"
+    },
+    "jq": {
+      "name": "jq",
+      "version": "1.7",
+      "description": "Command-line JSON processor",
+      "author": "Stephen Dolan",
+      "category": "utilities",
+      "size": "480 KB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/jq.wasm",
+      "entrypoint": "_start"
+    },
+    "lua": {
+      "name": "lua",
+      "version": "5.4.6",
+      "description": "Powerful, efficient, lightweight, embeddable scripting language",
+      "author": "Lua.org",
+      "category": "programming",
+      "size": "310 KB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/lua.wasm",
+      "entrypoint": "_start"
+    },
+    "python": {
+      "name": "python",
+      "version": "3.12-wasm",
+      "description": "Python interpreter compiled for WebAssembly & WASI (REPL & scripts)",
+      "author": "Python Software Foundation",
+      "category": "programming",
+      "size": "1.8 MB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/python.wasm",
+      "entrypoint": "_start"
+    },
+    "quickjs": {
+      "name": "quickjs",
+      "version": "2024-01-13",
+      "description": "Small and embeddable Javascript engine (ES2020) for WASI",
+      "author": "Fabrice Bellard",
+      "category": "programming",
+      "size": "720 KB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/quickjs.wasm",
+      "entrypoint": "_start"
+    },
+    "sqlite3": {
+      "name": "sqlite3",
+      "version": "3.45.1",
+      "description": "Embedded SQL database engine with CLI interface",
+      "author": "D. Richard Hipp",
+      "category": "database",
+      "size": "850 KB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/sqlite3.wasm",
+      "entrypoint": "_start"
+    },
+    "tcc": {
+      "name": "tcc",
+      "version": "0.9.27",
+      "description": "Tiny C Compiler: Compile and run C code directly in the browser",
+      "author": "Fabrice Bellard",
+      "category": "programming",
+      "size": "450 KB",
+      "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/tcc.wasm",
+      "entrypoint": "_start"
+    }
+  }
+}

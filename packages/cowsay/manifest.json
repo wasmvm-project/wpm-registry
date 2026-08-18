@@ -1,0 +1,10 @@
+{
+  "name": "cowsay",
+  "version": "1.0.0",
+  "description": "Configurable talking cow in ASCII art (WASI binary)",
+  "author": "Tony Monroe",
+  "category": "games",
+  "size": "42 KB",
+  "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/cowsay.wasm",
+  "entrypoint": "_start"
+}

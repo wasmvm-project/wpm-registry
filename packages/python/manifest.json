@@ -1,0 +1,10 @@
+{
+  "name": "python",
+  "version": "3.12-wasm",
+  "description": "Python interpreter compiled for WebAssembly & WASI (REPL & scripts)",
+  "author": "Python Software Foundation",
+  "category": "programming",
+  "size": "1.8 MB",
+  "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/python.wasm",
+  "entrypoint": "_start"
+}

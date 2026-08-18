@@ -1,0 +1,10 @@
+{
+  "name": "sqlite3",
+  "version": "3.45.1",
+  "description": "Embedded SQL database engine with CLI interface",
+  "author": "D. Richard Hipp",
+  "category": "database",
+  "size": "850 KB",
+  "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/sqlite3.wasm",
+  "entrypoint": "_start"
+}

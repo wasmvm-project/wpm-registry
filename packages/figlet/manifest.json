@@ -1,0 +1,10 @@
+{
+  "name": "figlet",
+  "version": "2.2.5",
+  "description": "Program for making large letters out of ordinary text",
+  "author": "Glenn Chappell",
+  "category": "utilities",
+  "size": "120 KB",
+  "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/figlet.wasm",
+  "entrypoint": "_start"
+}
