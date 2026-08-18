@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-18T15:53:50.084Z",
+  "updated_at": "2026-08-18T16:21:12.048Z",
   "packages": {
     "cowsay": {
       "name": "cowsay",
@@ -10,6 +10,16 @@
       "category": "games",
       "size": "42 KB",
       "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/cowsay.wasm",
+      "entrypoint": "_start"
+    },
+    "ffmpeg": {
+      "name": "ffmpeg",
+      "version": "0.12.10",
+      "description": "Complete cross-platform solution to record, convert and stream audio and video (WebAssembly build)",
+      "author": "FFmpeg / ffmpeg.wasm team",
+      "category": "media",
+      "size": "24.5 MB",
+      "wasm_url": "https://unpkg.com/@ffmpeg/core@0.12.6/dist/esm/ffmpeg-core.wasm",
       "entrypoint": "_start"
     },
     "figlet": {
