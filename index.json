@@ -1,7 +1,24 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-18T16:21:12.048Z",
+  "updated_at": "2026-08-19T07:16:53.051Z",
   "packages": {
+    "busybox": {
+      "name": "busybox",
+      "version": "1.37.1",
+      "description": "The Swiss Army Knife of Embedded Linux. Provides authentic WASM versions of ls, cat, vi, grep, sed, and more.",
+      "executable": "busybox.wasm",
+      "aliases": {
+        "ls": "busybox.wasm",
+        "cat": "busybox.wasm",
+        "echo": "busybox.wasm",
+        "grep": "busybox.wasm",
+        "sed": "busybox.wasm",
+        "awk": "busybox.wasm",
+        "find": "busybox.wasm",
+        "tar": "busybox.wasm",
+        "vi": "busybox.wasm"
+      }
+    },
     "cowsay": {
       "name": "cowsay",
       "version": "1.0.0",
@@ -71,6 +88,24 @@
       "size": "720 KB",
       "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/quickjs.wasm",
       "entrypoint": "_start"
+    },
+    "ruby": {
+      "name": "ruby",
+      "version": "2.10.1",
+      "description": "The official WebAssembly port of the Ruby programming language.",
+      "executable": "ruby.wasm",
+      "aliases": {
+        "ruby": "ruby.wasm"
+      }
+    },
+    "sl": {
+      "name": "sl",
+      "version": "5.03.0",
+      "description": "Steam Locomotive runs across your terminal when you type 'sl' instead of 'ls'.",
+      "executable": "sl.wasm",
+      "aliases": {
+        "sl": "sl.wasm"
+      }
     },
     "sqlite3": {
       "name": "sqlite3",

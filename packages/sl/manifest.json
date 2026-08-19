@@ -1,0 +1,9 @@
+{
+  "name": "sl",
+  "version": "5.03.0",
+  "description": "Steam Locomotive runs across your terminal when you type 'sl' instead of 'ls'.",
+  "executable": "sl.wasm",
+  "aliases": {
+    "sl": "sl.wasm"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ruby",
+  "version": "2.10.1",
+  "description": "The official WebAssembly port of the Ruby programming language.",
+  "executable": "ruby.wasm",
+  "aliases": {
+    "ruby": "ruby.wasm"
+  }
+}
