@@ -1,24 +1,7 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-19T07:16:53.051Z",
+  "updated_at": "2026-08-19T07:27:56.201Z",
   "packages": {
-    "busybox": {
-      "name": "busybox",
-      "version": "1.37.1",
-      "description": "The Swiss Army Knife of Embedded Linux. Provides authentic WASM versions of ls, cat, vi, grep, sed, and more.",
-      "executable": "busybox.wasm",
-      "aliases": {
-        "ls": "busybox.wasm",
-        "cat": "busybox.wasm",
-        "echo": "busybox.wasm",
-        "grep": "busybox.wasm",
-        "sed": "busybox.wasm",
-        "awk": "busybox.wasm",
-        "find": "busybox.wasm",
-        "tar": "busybox.wasm",
-        "vi": "busybox.wasm"
-      }
-    },
     "cowsay": {
       "name": "cowsay",
       "version": "1.0.0",
