@@ -74,8 +74,30 @@ async function main() {
           const cleanPath = binPath.replace(/^\.\//, '');
           console.log(`[pnpm] Downloading CLI script ${binName} -> ${pkg}/${cleanPath}`);
           
-          const reqUrl = `https://esm.sh/${info.name}@${info.version}/${cleanPath}?bundle`;
-          const res = await fetch(reqUrl);
+          let reqUrl = `https://esm.sh/${info.name}@${info.version}/${cleanPath}?bundle`;
+          let res = await fetch(reqUrl);
+          
+          if (!res.ok) {
+            console.log(`[pnpm] Failed to fetch bundle (HTTP ${res.status}). Attempting to resolve proxy script...`);
+            try {
+              const rawRes = await fetch(`https://unpkg.com/${info.name}@${info.version}/${cleanPath}`);
+              if (rawRes.ok) {
+                const rawCode = await rawRes.text();
+                const match = rawCode.match(/(?:import|require)\s*\(\s*['"]([^'"]+\.js)['"]\s*\)|import\s+['"]([^'"]+\.js)['"]/);
+                if (match) {
+                  const targetPath = match[1] || match[2];
+                  const resolvedUrl = new URL(targetPath, `http://localhost/${cleanPath}`);
+                  const resolvedCleanPath = resolvedUrl.pathname.slice(1);
+                  console.log(`[pnpm] Resolved proxy script to ${resolvedCleanPath}`);
+                  reqUrl = `https://esm.sh/${info.name}@${info.version}/${resolvedCleanPath}?bundle`;
+                  res = await fetch(reqUrl);
+                }
+              }
+            } catch (e) {
+              console.warn(`[pnpm] Proxy resolution failed: ${e.message}`);
+            }
+          }
+
           if (!res.ok) throw new Error(`HTTP ${res.status} from ${reqUrl}`);
           const code = await res.text();
           
