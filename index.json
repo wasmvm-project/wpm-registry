@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-19T07:27:56.201Z",
+  "updated_at": "2026-08-20T01:34:43.342Z",
   "packages": {
     "cowsay": {
       "name": "cowsay",
@@ -51,6 +51,22 @@
       "size": "310 KB",
       "wasm_url": "https://wasmvm.fukayatti0.dev/wasm/lua.wasm",
       "entrypoint": "_start"
+    },
+    "pip": {
+      "name": "pip",
+      "version": "1.0.0",
+      "description": "Python package manager for WASMVM OPFS",
+      "executable": "pip.js",
+      "url": "https://raw.githubusercontent.com/wasmvm-project/wpm-registry/main/packages/pip/pip.js",
+      "type": "js"
+    },
+    "pnpm": {
+      "name": "pnpm",
+      "version": "1.0.0",
+      "description": "Fast ESM package manager for WASMVM OPFS",
+      "executable": "pnpm.js",
+      "url": "https://raw.githubusercontent.com/wasmvm-project/wpm-registry/main/packages/pnpm/pnpm.js",
+      "type": "js"
     },
     "python": {
       "name": "python",

@@ -1,0 +1,8 @@
+{
+  "name": "pnpm",
+  "version": "1.0.0",
+  "description": "Fast ESM package manager for WASMVM OPFS",
+  "executable": "pnpm.js",
+  "url": "https://raw.githubusercontent.com/wasmvm-project/wpm-registry/main/packages/pnpm/pnpm.js",
+  "type": "js"
+}
