@@ -1,8 +1,8 @@
 {
   "name": "pip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Python package manager for WASMVM OPFS",
-  "executable": "pip.js",
-  "url": "https://raw.githubusercontent.com/wasmvm-project/wpm-registry/main/packages/pip/pip.js",
+  "executable": "pip.js?v=1.0.1",
+  "url": "https://raw.githubusercontent.com/wasmvm-project/wpm-registry/main/packages/pip/pip.js?v=1.0.1",
   "type": "js"
 }
