@@ -99,8 +99,8 @@ async function main() {
           }
 
           if (!res.ok) throw new Error(`HTTP ${res.status} from ${reqUrl}`);
-          const code = await res.text();
           
+          const code = `import "${reqUrl}";\nexport * from "${reqUrl}";\n`;
           await writeTextFileOPFS(`/bin/${binName}.js`, code);
           console.log(`[pnpm] Successfully installed global command: ${binName}`);
         }
